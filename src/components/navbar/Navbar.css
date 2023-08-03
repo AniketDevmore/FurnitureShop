@@ -1,0 +1,86 @@
+/* main div  */
+.navMainDiv {
+  background-color: #f3f3f3;
+  width: 100vw;
+  height: fit-content;
+  position: fixed;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* company logo */
+.logoDiv {
+  margin: 15px 35px;
+  padding: 6px;
+  background-image: url(../../images/blackOak.jpg);
+  color: #ffffff;
+  text-shadow: 5px 5px 5px #000;
+  cursor: pointer;
+}
+.logoDiv h1 {
+  margin: 0;
+}
+.logoDiv p {
+  margin: 0;
+  text-align: center;
+}
+
+/* menu */
+.menuUl {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.menuLi {
+  font-size: 1.4rem;
+  margin: 0 100px 0 0;
+}
+.menuLi:hover {
+  color: #8b765b;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 87px;
+    line-height: 3rem;
+  }
+  .menuUl {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+  .meniLi {
+    width: fit-content;
+  }
+  .toggleDiv {
+    margin: 25px 35px;
+  }
+  .hamburger {
+    display: block;
+    width: 30px;
+    font-size: 30px;
+    color: #91744f;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: flex;
+    background-color: #f3f3f3;
+    width: 100vw;
+    justify-content: center;
+  }
+}

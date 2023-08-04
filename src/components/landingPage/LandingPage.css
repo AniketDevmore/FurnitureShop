@@ -1,0 +1,107 @@
+/* Landing page image design */
+.landingPageBack {
+  width: 100vw;
+  height: calc(100vh - 91px);
+  position: relative;
+  top: 87px;
+}
+.landingPageBack img {
+  height: 100%;
+  width: 100%;
+}
+
+.landingPageFront {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 25px 5vw;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.landingPageFront h1,
+p {
+  color: #fff;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+}
+.landingPageFront h1 {
+  font-size: 3rem;
+  margin: 0 0 30px 0;
+  text-shadow: 5px 5px 5px #000;
+}
+.landingPageFront p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.landingPageFront hr {
+  width: 20vw;
+  height: 6px;
+  background-color: #b3936f;
+  border-style: none;
+}
+.landingPageFront a {
+  text-decoration: none;
+  color: #000;
+  background-color: #b3936f;
+  border: 3px solid #b3936f;
+  padding: 7px 12px;
+  letter-spacing: 0.1rem;
+}
+.landingPageFront a:hover {
+  background-color: transparent;
+  border: 3px solid #b3936f;
+  color: #b3936f;
+  transition: 0.7s ease;
+}
+
+/* Landing page services design */
+.landingPageServices {
+  padding-top: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #bdbcbc;
+}
+
+.serviceTop h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.serviceTop hr {
+  width: 80px;
+  height: 6px;
+  background-color: #83684a;
+  border-style: none;
+}
+
+.serviceBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0 70px 0;
+}
+.serviceBottom div {
+  width: 230px;
+  margin: 3px auto;
+  padding: 20px;
+}
+.serviceBottom div h5 {
+  font-size: 2.2rem;
+  margin: 0;
+  margin: 20px;
+}
+.serviceBottom div h6 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin: 30px;
+  letter-spacing: 0.1rem;
+}
+.serviceBottom div p {
+  color: #000;
+  letter-spacing: 0;
+}

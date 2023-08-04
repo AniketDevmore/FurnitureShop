@@ -69,6 +69,6 @@ button:focus-visible {
 } */
 body {
   margin: 0;
-  background-color: aqua;
-  height: 5000px;
+  background-color: rgb(170, 170, 170);
+  height: 3000px;
 }

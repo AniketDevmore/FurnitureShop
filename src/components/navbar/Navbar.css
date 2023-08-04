@@ -4,6 +4,7 @@
   width: 100vw;
   height: fit-content;
   position: fixed;
+  z-index: 5;
 }
 .navbar {
   display: flex;
@@ -16,9 +17,12 @@
   margin: 15px 35px;
   padding: 6px;
   background-image: url(../../images/blackOak.jpg);
-  color: #ffffff;
   text-shadow: 5px 5px 5px #000;
   cursor: pointer;
+}
+.logoDiv a {
+  text-decoration: none;
+  color: #fff;
 }
 .logoDiv h1 {
   margin: 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,10 +8,12 @@ const Navbar = () => {
       <div className="navMainDiv">
         <nav className="navbar">
           <div className="logoDiv">
-            <div>
-              <h1>Black Oak</h1>
-              <p>Furniture</p>
-            </div>
+            <Link to={"/"}>
+              <div>
+                <h1>Black Oak</h1>
+                <p>Furniture</p>
+              </div>
+            </Link>
           </div>
           <div className="toggleDiv">
             <input type="checkbox" id="checkbox-toggle" />

@@ -18,14 +18,22 @@ const Navbar = () => {
           <div className="toggleDiv">
             <input type="checkbox" id="checkbox-toggle" />
             <label htmlFor="checkbox-toggle" className="hamburger">
-              <i class="fa-solid fa-bars-staggered"></i>
+              <i className="fa-solid fa-bars-staggered"></i>
             </label>
             <div className="menu">
               <ul className="menuUl">
-                <li className="menuLi">Home</li>
-                <li className="menuLi">Products</li>
-                <li className="menuLi">Contact Us</li>
-                <li className="menuLi">Gallery</li>
+                <li className="menuLi">
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li className="menuLi">
+                  <Link>Products</Link>
+                </li>
+                <li className="menuLi">
+                  <Link>Contact Us</Link>
+                </li>
+                <li className="menuLi">
+                  <Link>Gallery</Link>
+                </li>
               </ul>
             </div>
           </div>

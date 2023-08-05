@@ -2,8 +2,12 @@ import React from "react";
 import "./LandingPage.css";
 import landingPageBackImg from "../../images/landingPageBackImg.jpg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const LandingPage = () => {
+  const featuredPro = useSelector(
+    (state) => state.counterSlice.featuredProduct
+  );
   return (
     <div>
       <div className="landingOuterDiv">
@@ -25,7 +29,7 @@ const LandingPage = () => {
         <div className="serviceBottom">
           <div>
             <h5 style={{ color: "#535252" }}>
-              <i class="fa-solid fa-wrench"></i>
+              <i className="fa-solid fa-wrench"></i>
             </h5>
             <h6>Support</h6>
             <p>
@@ -35,14 +39,14 @@ const LandingPage = () => {
           </div>
           <div>
             <h5 style={{ color: "#af5b5b" }}>
-              <i class="fa-solid fa-heart"></i>
+              <i className="fa-solid fa-heart"></i>
             </h5>
             <h6>We Care for you</h6>
             <p>We provide best products to our customers.</p>
           </div>
           <div>
             <h5 style={{ color: "#3a3939" }}>
-              <i class="fa-solid fa-network-wired"></i>
+              <i className="fa-solid fa-network-wired"></i>
             </h5>
             <h6>Connect with Us</h6>
             <p>
@@ -52,7 +56,7 @@ const LandingPage = () => {
           </div>
           <div>
             <h5 style={{ color: "#af7f52" }}>
-              <i class="fa-solid fa-comment-dots"></i>
+              <i className="fa-solid fa-comment-dots"></i>
             </h5>
             <h6>Give Feedback</h6>
             <p>
@@ -60,6 +64,33 @@ const LandingPage = () => {
               improve.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="productFeaturesMain">
+        <div className="productFeaturesTitle">
+          <h6>Featured Product</h6>
+          <hr />
+        </div>
+        <div className="productFeatures">
+          {featuredPro.map((ele, i) => (
+            <div key={i}>
+              <div>
+                <div>
+                  <img src={ele.img[0]} alt={ele.title} />
+                  <div>
+                    <h5>
+                      Price starts from <br /> ₹{ele.price}
+                    </h5>
+                    <Link to={`/features/${ele.id}`}>FEATURES</Link>
+                  </div>
+                </div>
+
+                <div>
+                  <h6>{ele.title}</h6>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

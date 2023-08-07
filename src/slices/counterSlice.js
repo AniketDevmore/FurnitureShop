@@ -38,7 +38,34 @@ export const counterSlice = createSlice({
         img: [digning1, digning2, digning3],
       },
     ],
+    products: [
+      {
+        id: "double-bed",
+        title: "Double Bed",
+        price: 10000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [doubleBed3, doubleBed1, doubleBed2],
+      },
+      {
+        id: "couch",
+        title: "Couch",
+        price: 14000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [couch1, couch2, couch3],
+      },
+      {
+        id: "digning-table",
+        title: "Digning Table",
+        price: 12000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [digning2, digning1, digning3],
+      },
+    ],
   },
+
   reducers: {},
 });
 

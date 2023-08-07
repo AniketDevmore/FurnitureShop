@@ -18,7 +18,7 @@ const LandingPage = () => {
           <h1>BLACK OAK</h1>
           <hr />
           <p>Deluxe Furniture At Best Price</p>
-          <Link>OUR PRODUCTS</Link>
+          <Link to={"/products"}>OUR PRODUCTS</Link>
         </div>
       </div>
       <div className="landingPageServices">

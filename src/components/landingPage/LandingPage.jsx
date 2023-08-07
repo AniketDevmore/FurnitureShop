@@ -5,11 +5,15 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const LandingPage = () => {
+  // get featured product data
   const featuredPro = useSelector(
     (state) => state.counterSlice.featuredProduct
   );
+
+  // get glimps data
   return (
     <div>
+      {/* heading image */}
       <div className="landingOuterDiv">
         <div className="landingPageBack">
           <img src={landingPageBackImg} alt="Luxary beds" />
@@ -21,6 +25,7 @@ const LandingPage = () => {
           <Link to={"/products"}>OUR PRODUCTS</Link>
         </div>
       </div>
+      {/* services section */}
       <div className="landingPageServices">
         <div className="serviceTop">
           <h1>Services</h1>
@@ -66,6 +71,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      {/* featured product section */}
       <div className="productFeaturesMain">
         <div className="productFeaturesTitle">
           <h6>Featured Product</h6>
@@ -84,7 +90,6 @@ const LandingPage = () => {
                     <Link to={`/features/${ele.id}`}>FEATURES</Link>
                   </div>
                 </div>
-
                 <div>
                   <h6>{ele.title}</h6>
                 </div>
@@ -92,6 +97,14 @@ const LandingPage = () => {
             </div>
           ))}
         </div>
+      </div>
+      {/* product glimpse section */}
+      <div className="glimpseOuter">
+        <div>
+          <h6>Products Glimpse</h6>
+          <hr />
+        </div>
+        <div>{}</div>
       </div>
     </div>
   );

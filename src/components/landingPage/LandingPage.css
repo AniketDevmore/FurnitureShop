@@ -130,11 +130,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 90vw;
-  margin: 20px auto;
+  max-width: 98vw;
+  margin: 0 auto;
+  padding: 30px 0 90px 0;
 }
 .productFeatures > div {
-  margin: 60px auto;
+  margin: 0 auto;
   padding: 30px;
   position: relative;
 }
@@ -142,8 +143,8 @@
   box-shadow: 5px 5px 5px #5f5f5f;
 }
 .productFeatures div div div:first-child {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   margin: auto;
 }
 .productFeatures img {
@@ -206,4 +207,22 @@
   border: 3px solid #b3936f;
   color: #b3936f;
   transition: 0.7s ease;
+}
+
+/* landing page product glimpse design */
+.glimpseOuter {
+  background-color: #fcf9f9;
+}
+.glimpseOuter div:first-child h6 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
+  padding: 70px 0 20px 0;
+}
+.glimpseOuter div:first-child hr {
+  width: 80px;
+  height: 6px;
+  background-color: #83684a;
+  border-style: none;
 }

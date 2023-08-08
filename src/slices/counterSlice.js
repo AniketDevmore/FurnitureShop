@@ -17,6 +17,24 @@ import singlebed3 from "../images/featured/single-bed3.jpg";
 import dressingtable1 from "../images/featured/dressing-table1.jpg";
 import dressingtable2 from "../images/featured/dressing-table2.jpg";
 import dressingtable3 from "../images/featured/dressing-table3.jpg";
+import chair1 from "../images/featured/chair1.jpg";
+import chair2 from "../images/featured/chair2.jpg";
+import chair3 from "../images/featured/chair3.jpg";
+import bookshelve1 from "../images/featured/bookshelves1.jpg";
+import bookshelve2 from "../images/featured/bookshelves2.jpg";
+import bookshelve3 from "../images/featured/bookshelves3.jpg";
+import gardenfurniture1 from "../images/featured/gardenfurniture1.jpg";
+import gardenfurniture2 from "../images/featured/gardenfurniture2.jpg";
+import gardenfurniture3 from "../images/featured/gardenfurniture3.jpg";
+import recliner1 from "../images/featured/recliner1.jpg";
+import recliner2 from "../images/featured/recliner2.jpg";
+import recliner3 from "../images/featured/recliner3.jpg";
+import desk1 from "../images/featured/desk1.jpg";
+import desk2 from "../images/featured/desk2.jpg";
+import desk3 from "../images/featured/desk3.jpg";
+import bech1 from "../images/featured/bench1.jpg";
+import bech2 from "../images/featured/bench2.jpg";
+import bech3 from "../images/featured/bench3.jpg";
 
 export const counterSlice = createSlice({
   name: "counter",
@@ -75,7 +93,7 @@ export const counterSlice = createSlice({
       {
         id: "bean-bag",
         title: "Bean Bag",
-        price: 2000,
+        price: 1000,
         details:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
         img: [beanbag1, beanbag2, beanbag3],
@@ -95,6 +113,54 @@ export const counterSlice = createSlice({
         details:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
         img: [dressingtable1, dressingtable2, dressingtable3],
+      },
+      {
+        id: "chair",
+        title: "Chair",
+        price: 2000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [chair1, chair3, chair2],
+      },
+      {
+        id: "bookshelve",
+        title: "Bookshelve",
+        price: 5000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [bookshelve1, bookshelve3, bookshelve2],
+      },
+      {
+        id: "garden-furniture",
+        title: "Garden Furniture",
+        price: 15000,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [gardenfurniture1, gardenfurniture2, gardenfurniture3],
+      },
+      {
+        id: "recliner",
+        title: "Recliner",
+        price: 3500,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [recliner1, recliner2, recliner3],
+      },
+      {
+        id: "desk",
+        title: "Desk",
+        price: 1300,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [desk1, desk2, desk3],
+      },
+      {
+        id: "bench",
+        title: "Bench",
+        price: 1300,
+        details:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ut in reprehenderit velit commodi a illo iure, quasi accusantium nulla veritatis reiciendis soluta tenetur libero natus alias quidem assumenda!",
+        img: [bech1, bech2, bech3],
       },
     ],
   },

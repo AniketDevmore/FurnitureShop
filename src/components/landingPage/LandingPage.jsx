@@ -15,7 +15,7 @@ const LandingPage = () => {
   const glimpseData = useSelector((state) => state.counterSlice.products);
   useEffect(() => {
     let data = glimpseData.map((ele) => ele.img[1]);
-    setGlimpseProduct(data);
+    setGlimpseProduct(data.splice(1, 6));
     // console.log(data);
   }, []);
   return (

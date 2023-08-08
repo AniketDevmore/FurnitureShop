@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./LandingPage.css";
 import landingPageBackImg from "../../images/landingPageBackImg.jpg";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const LandingPage = () => {
+  const [glimpseProduct, setGlimpseProduct] = useState([]);
   // get featured product data
   const featuredPro = useSelector(
     (state) => state.counterSlice.featuredProduct
   );
 
-  // get glimps data
+  // get glimpse data
+  const glimpseData = useSelector((state) => state.counterSlice.products);
+  useEffect(() => {
+    let data = glimpseData.map((ele) => ele.img[1]);
+    setGlimpseProduct(data);
+    // console.log(data);
+  }, []);
   return (
     <div>
       {/* heading image */}
@@ -104,7 +111,16 @@ const LandingPage = () => {
           <h6>Products Glimpse</h6>
           <hr />
         </div>
-        <div>{}</div>
+        <div>
+          {glimpseProduct.map((ele, i) => (
+            <div key={i}>
+              <img src={ele} alt="img" />
+            </div>
+          ))}
+        </div>
+        <div>
+          <Link to={"/glimpse"}>EXPLORE</Link>
+        </div>
       </div>
     </div>
   );

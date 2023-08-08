@@ -212,6 +212,7 @@
 /* landing page product glimpse design */
 .glimpseOuter {
   background-color: #fcf9f9;
+  padding-bottom: 50px;
 }
 .glimpseOuter div:first-child h6 {
   font-size: 2.5rem;
@@ -225,4 +226,47 @@
   height: 6px;
   background-color: #83684a;
   border-style: none;
+}
+.glimpseOuter div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 25px 30px 25px;
+}
+.glimpseOuter div:nth-child(2) div {
+  height: 250px;
+  width: 360px;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+  border: 10px solid transparent;
+}
+.glimpseOuter div:nth-child(2) div img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2);
+  transition: 0.7s ease;
+}
+.glimpseOuter div:nth-child(2) div img:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+
+.glimpseOuter div:last-child {
+  width: fit-content;
+  margin: auto;
+}
+.glimpseOuter div:last-child a {
+  text-decoration: none;
+  color: #2e2d2d;
+  background-color: #b3936f;
+  border: 3px solid #b3936f;
+  padding: 7px 12px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.glimpseOuter div:last-child a:hover {
+  background-color: transparent;
+  border: 3px solid #b3936f;
+  color: #b3936f;
+  transition: 0.7s ease;
 }

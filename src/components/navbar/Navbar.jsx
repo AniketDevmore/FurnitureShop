@@ -29,10 +29,10 @@ const Navbar = () => {
                   <Link to={"/products"}>Products</Link>
                 </li>
                 <li className="menuLi">
-                  <Link>Contact Us</Link>
+                  <Link to={"/contact-us"}>Contact Us</Link>
                 </li>
                 <li className="menuLi">
-                  <Link>Gallery</Link>
+                  <Link to={"/glimpse"}>Gallery</Link>
                 </li>
               </ul>
             </div>

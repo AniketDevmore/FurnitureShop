@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import LandingPage from "./components/landingPage/LandingPage";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <div>
       <Navbar />
       <LandingPage />
+      <Footer />
     </div>
   );
 }

@@ -24,10 +24,10 @@ const Glimpse = () => {
             <img src={glimpsebackground} alt="Luxary beds" />
           </div>
           <div className="landingPageFront">
-            <h1>BLACK OAK</h1>
+            <h1>GALLERY</h1>
             <hr />
-            <p>Deluxe Furniture At Best Price</p>
-            <Link to={"/contact-us"}>CONTACT US</Link>
+            <p>Astonishing Products</p>
+            <Link to={"/products"}>OUR PRODUCTS</Link>
           </div>
         </div>
       </div>

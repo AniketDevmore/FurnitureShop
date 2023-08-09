@@ -1,6 +1,6 @@
 /* Landing page image design */
 .landingPageBack {
-  width: 100vw;
+  width: calc(100vw - 18px);
   height: calc(100vh - 91px);
   position: relative;
   top: 87px;

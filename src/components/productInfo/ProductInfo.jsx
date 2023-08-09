@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import { useSelector } from "react-redux";
 import "./ProductInfo.css";
+import Footer from "../footer/Footer";
 
 const ProductInfo = () => {
   const [info, setInfo] = useState({
@@ -44,7 +45,7 @@ const ProductInfo = () => {
           <div className="landingPageFront">
             <h1>{info.title}</h1>
             <hr style={{ marginBottom: "35px" }} />
-            <Link to={'/products'}>BACK TO PRODUCTS</Link>
+            <Link to={"/products"}>BACK TO PRODUCTS</Link>
           </div>
         </div>
         <div className="infoBottomDiv">
@@ -67,6 +68,7 @@ const ProductInfo = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

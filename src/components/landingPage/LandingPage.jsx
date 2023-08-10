@@ -106,9 +106,9 @@ const LandingPage = () => {
         </div>
       </div>
       {/* product glimpse section */}
-      <div className="glimpseOuter">
+      <div className="galleryOuter">
         <div>
-          <h6>Products Glimpse</h6>
+          <h6>Products Gallery</h6>
           <hr />
         </div>
         <div>
@@ -119,7 +119,7 @@ const LandingPage = () => {
           ))}
         </div>
         <div>
-          <Link to={"/glimpse"}>EXPLORE</Link>
+          <Link to={"/gallery"}>MORE...</Link>
         </div>
       </div>
     </div>

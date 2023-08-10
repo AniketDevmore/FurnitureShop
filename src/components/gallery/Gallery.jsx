@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import "./Glimpse.css";
+import "./Gallery.css";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import { Link } from "react-router-dom";
-import glimpsebackground from "../../images/glimpse.jpg";
+import gallerybackground from "../../images/gallery.jpg";
 import { useSelector } from "react-redux";
 
 const Glimpse = () => {
-  const [glimpseProduct, setGlimpseProduct] = useState([]);
+  const [galleryProduct, setGalleryProduct] = useState([]);
 
-  const glimpseData = useSelector((state) => state.counterSlice.products);
+  const galleryData = useSelector((state) => state.counterSlice.products);
   useEffect(() => {
-    let data = glimpseData.map((ele) => ele.img[2]);
-    setGlimpseProduct(data);
+    let data = galleryData.map((ele) => ele.img[2]);
+    setGalleryProduct(data);
     // console.log(data);
   }, []);
   return (
@@ -21,12 +21,12 @@ const Glimpse = () => {
       <div>
         <div className="landingOuterDiv">
           <div className="landingPageBack">
-            <img src={glimpsebackground} alt="Luxary beds" />
+            <img src={gallerybackground} alt="Luxary beds" />
           </div>
           <div className="landingPageFront">
             <h1>GALLERY</h1>
             <hr />
-            <p>Astonishing Products</p>
+            <p>Appalling Products</p>
             <Link to={"/products"}>OUR PRODUCTS</Link>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Glimpse = () => {
           <hr />
         </div>
         <div>
-          {glimpseProduct.map((ele, i) => (
+          {galleryProduct.map((ele, i) => (
             <div key={i}>
               <img src={ele} alt="img" />
             </div>

@@ -6,7 +6,7 @@
 }
 .footerOuter div:first-child a {
   text-decoration: none;
-  color: #3b3b3b;
+  color: #2b2a2a;
   background-color: #b3936f;
   border: 3px solid #b3936f;
   padding: 7px 12px;
@@ -20,15 +20,16 @@
   transition: 0.7s ease;
 }
 .footerOuter div:nth-child(2) p {
-  color: #e6e4e4;
+  color: #cccccc;
   padding: 20px 0 0 0;
 }
 .footerOuter div:nth-child(3) p {
-  color: #e6e4e4;
+  color: #cccccc;
 }
 .footerOuter div:last-child p {
   margin: 0;
   padding: 0;
+  font-size: 0.8rem;
   line-height: 1.5rem;
-  color: #e6e4e4;
+  color: #858585;
 }

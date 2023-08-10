@@ -32,7 +32,7 @@ const Navbar = () => {
                   <Link to={"/contact-us"}>Contact Us</Link>
                 </li>
                 <li className="menuLi">
-                  <Link to={"/glimpse"}>Gallery</Link>
+                  <Link to={"/gallery"}>Gallery</Link>
                 </li>
               </ul>
             </div>

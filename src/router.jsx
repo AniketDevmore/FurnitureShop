@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ProductInfo from "./components/productInfo/ProductInfo";
 import AllProducts from "./components/allProducts/AllProducts";
-import Glimpse from "./components/glimpse/Glimpse";
+import Gallery from "./components/gallery/Gallery";
 import Contact from "./components/contact/Contact";
 const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     element: <AllProducts />,
   },
   {
-    path: "/glimpse",
-    element: <Glimpse />,
+    path: "/gallery",
+    element: <Gallery />,
   },
   {
     path: "/contact-us",

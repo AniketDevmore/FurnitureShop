@@ -178,9 +178,11 @@
   color: #000;
   background-color: #b3936f;
   border: 3px solid #b3936f;
-  padding: 7px 12px;
+  border-radius: 50px;
+  padding: 10px;
   letter-spacing: 0.1rem;
   visibility: hidden;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 

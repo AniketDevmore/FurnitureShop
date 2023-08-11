@@ -31,7 +31,7 @@ const Glimpse = () => {
           </div>
         </div>
       </div>
-      <div className="galleryOuter">
+      <div style={{ marginTop: "87px" }} className="galleryOuter">
         <div className="productFeaturesTitle">
           <h6>Gallery</h6>
           <hr />

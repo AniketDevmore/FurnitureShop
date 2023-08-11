@@ -28,7 +28,7 @@ const LandingPage = () => {
         <div className="landingPageFront">
           <h1>BLACK OAK</h1>
           <hr />
-          <p>Deluxe Furniture At Best Price</p>
+          <p>Furniture At Best Price</p>
           <Link to={"/products"}>OUR PRODUCTS</Link>
         </div>
       </div>
@@ -45,25 +45,25 @@ const LandingPage = () => {
             </h5>
             <h6>Support</h6>
             <p>
-              We Support our customers at every step from the point they connect
-              with us.
+              We give you available, helpful, professional customer service
+              24/7.
             </p>
           </div>
           <div>
             <h5 style={{ color: "#af5b5b" }}>
-              <i className="fa-solid fa-heart"></i>
+              <i className="fa-solid fa-truck"></i>
             </h5>
-            <h6>We Care for you</h6>
-            <p>We provide best products to our customers.</p>
+            <h6>Fastest Delivery & Services</h6>
+            <p>We provide same day, and emergency services available.</p>
           </div>
           <div>
             <h5 style={{ color: "#3a3939" }}>
-              <i className="fa-solid fa-network-wired"></i>
+              <i className="fa-solid fa-house-user"></i>
             </h5>
-            <h6>Connect with Us</h6>
+            <h6>Home Service</h6>
             <p>
-              We Welcome you to connect with us through various social media
-              networks.
+              We send the best qualified professional and experienced technician
+              for the type of job requested.
             </p>
           </div>
           <div>
@@ -94,7 +94,9 @@ const LandingPage = () => {
                     <h5>
                       Price starts from <br /> ₹{ele.price}
                     </h5>
-                    <Link to={`/features/${ele.id}`}>FEATURES</Link>
+                    <Link to={`/features/${ele.id}`}>
+                      <i className="fa-solid fa-magnifying-glass"></i>
+                    </Link>
                   </div>
                 </div>
                 <div>

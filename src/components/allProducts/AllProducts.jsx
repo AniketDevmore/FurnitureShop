@@ -88,7 +88,9 @@ const AllProducts = () => {
                     <h5>
                       Price starts from <br /> ₹{ele.price}
                     </h5>
-                    <Link to={`/features/${ele.id}`}>FEATURES</Link>
+                    <Link to={`/features/${ele.id}`}>
+                      <i className="fa-solid fa-magnifying-glass"></i>
+                    </Link>
                   </div>
                 </div>
                 <div>

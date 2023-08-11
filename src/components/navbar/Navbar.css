@@ -91,5 +91,6 @@ input[type="checkbox"] {
     background-color: #f3f3f3;
     width: 100vw;
     justify-content: center;
+    transition: all 1s ease-in-out;
   }
 }

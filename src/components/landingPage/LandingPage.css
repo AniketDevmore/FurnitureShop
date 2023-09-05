@@ -42,12 +42,12 @@
   background-color: #b3936f;
   border-style: none;
 }
-.landingPageFront a {
+.landingPageFront > a {
   text-decoration: none;
   color: #000;
   background-color: #b3936f;
   border: 3px solid #b3936f;
-  padding: 7px 12px;
+  padding: 7px 10px;
   letter-spacing: 0.1rem;
 }
 .landingPageFront a:hover {
